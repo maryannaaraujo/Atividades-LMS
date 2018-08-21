@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lana Del Rey</h1><i>
+    <h2>American singer, songwriter, model and actress.</h2></i>
+
+    <div
+        style="background-color:black;color:white;paddin:20px;"> 
+            <p>She was born in New York City.</p><del>
+            <p>Born to die</p></del><small>
+            <p>June 21, 1985.</p></small> 
+    </div>
+
+    <div>
+        <a href="https://www.youtube.com/watch?v=Bag1gUxuU0g">
+            <img src="http://anotherimg.dazedgroup.netdna-cdn.com/1050/azure/another-prod/330/9/339425.jpg" 
+            alt="Lana Del Rey Vevo" style="width:525px;height:333px;border:0px">
+        </a>
+    </div>
+
+    <div>
+        <h3 style="color:grey;">Holy trinity:</h3>
+        <table>
+            <tr style="background-color:#FFBBDE">
+                <th>Name</th>
+                <th>Best song</th>
+            </tr>
+            <tr style="background-color:rgb(252,213,255)">
+                <td>Florence and the Machine</td>
+                <td>Dog days are over</td>
+            </tr>
+            <tr style="background-color:rgb(252,213,255)">
+                <td>Lana Del Rey</td>
+                <td>Ride</td>
+            </tr>
+            <tr style="background-color:rgb(252,213,255)">
+                <td>Marina and the Diamonds</td>
+                <td>Lies</td>
+            </tr>
+        </table></br>
+    </div>
+
+    <div>
+        <iframe width="525" height="500" frameborder="0" src="http://www.depoisdosquinze.com/"></iframe>
+    </div>
+
+    </body>
+</html>
