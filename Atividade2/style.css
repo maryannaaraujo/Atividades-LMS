@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    background: #F7F6F7;
+    font-family: 'Lato', sans-serif;
+}
+
+#banner{
+    font-size: 18px;
+    margin-left: 60px;
+    margin-right: 600px;
+    margin-top: -11px;
+    display: block;
+    float: left;
+}
+
+#personagens{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+    text-align: left;
+    font-size: 14px;
+}
+
+#menu ul{
+    margin: 0;
+    background-color: white;
+    list-style: none;
+}
+
+#menu ul li{
+    display: inline;
+}
+
+#menu ul li a{
+    padding: 20px 40px;
+    display: inline-block;
+    color: #070708;
+    text-decoration: none;
+}
+
+#menu ul li a:hover{
+    color: #811300;
+}
+
+#conteudo1{
+    background: white;
+    width:  1260px;
+    height: 240px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+}
+
+#conteudo1 header{
+    margin: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#conteudo1 p{
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#conteudo2{
+    background: white;
+    width:  1260px;
+    height: 1000px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+}
+
+#conteudo2 header{
+    margin: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#conteudo2 p{
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#conteudo2 section ul ol li{
+    margin-left: 60px;
+    margin-right: 80px;
+}
+
+#boneco{
+    text-align: center;
+    background: white;
+    width:  1260px;
+    height: 400px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+}
+
+#boneco header{
+    margin: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#midia{
+    background: white;
+    width:  1260px;
+    height: 850px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+}
+
+#midia header{
+    margin: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#midia iframe{
+    margin-left: 240px;
+}
+
+#midia audio{
+    margin-left: 480px;
+}
+
+#formulario{
+    background: white;
+    width:  1260px;
+    height: 520px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+}
+
+#formulario header{
+    margin: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#formulario form{
+    margin-left: 440px;
+    margin-bottom: 10px;
+}
+
+#formulario form input{
+    margin-top: 5px;
+}
+
+
+#footer{
+    width:  1260px;
+    height: 20px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
