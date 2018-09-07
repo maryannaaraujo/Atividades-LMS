@@ -1,2 +1,2 @@
-# http://Atividades-LMS.git.io
+# Atividades-LMS
 
