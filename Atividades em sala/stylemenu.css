@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.layout{
+    overflow: hidden;
+}
+
+.menu-lateral{
+    background-color: rgb(150,150,150);
+    float: left;
+    width: 30%;
+}
+
+.menu-lateral ul{
+    list-style-type: none;
+}
+
+.menu-lateral ul li a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    display: block;
+    padding: 5px;
+}
+
+.menu-lateral ul li a:hover{
+    background-color: rgb(100,100,100);
+}
+
+.container{
+    background-color: (200,200,200);
+    float: left;
+    width: 70%;
+}
+

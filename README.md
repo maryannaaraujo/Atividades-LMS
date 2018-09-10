@@ -1,4 +1,1 @@
-# https://maryannaaraujo.github.io/Atividades-LMS/
-
-meu site
-
+# Atividades-MaryannaAraujo-LMS
