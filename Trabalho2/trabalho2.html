@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BarbieApp</title>
+    <link rel="stylesheet" href="trabalho2.css">
+</head>
+<body>
+    <div class="layout">
+        <header class="header">
+            <div class="nomeApp"><span>BarbieApp</span></div>
+            <div class="button-login"><button class="button">Login</button></div>
+            <div class="button-logout"><button class="button">Logout</button></div>
+            <div class="nomeGrupo"><span></span></div>
+        </header>
+        
+        <div class="modal">
+            <div class="login">
+                <div class="close"><span>x</span></div>
+                <div class="bemvindo">
+                    <p>Seja bem vindo ao reino da <b>BarbieApp.</b></p>
+                    <p>Insira o seu nome para entrar nesse mundo de magia!</p>
+                </div>
+
+                <form action="" id="form-login">
+                    <label for="id">Digite seu nome:</label>
+                    <input type="text" id="id" placeholder="ex: Fada">
+                    <br>
+                    <div class="button-login"><button type="submit" class="button">Login</button></div>
+                </form>
+            </div>
+            <div class="modal-overlay">
+
+            </div>
+        </div> 
+
+        <div class="grupos">
+            <div class="groups-list">
+
+            </div>
+            <div class="add-group">
+                <form id="form-login" action="">
+                    <label for="group-name">Nome do Grupo:</label>
+                    <br>
+                    <input type="text" id="group-name" placeholder="ex: Grupo Barbie">
+                    <br>
+                    <label for="group-id">ID do Grupo:</label>
+                    <br>
+                    <input type="text" id="group-id" placeholder="ex: GB">
+                    <br>
+                    <div class="button-add"><button class="button">Cadastrar</button></div>
+                </form>
+            </div>
+        </div>
+        <div class="messages-content">
+            <div class="loading"></div>
+            <div class="messages">
+                <div class="message">
+                </div>
+            </div>
+            <div class="send-message">
+                <form id="form-message" action="">
+                    <textarea id="message" placeholder="Digite sua mensagem aqui!"></textarea>
+                    <div class="button-send"><button type="submit" class="button">Enviar</button></div>
+                </form>
+            </div>
+        </div>
+        <script src="trabalho2.js"></script>
+    </div>
+</body>
+</html>

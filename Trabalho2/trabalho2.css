@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(253, 234, 248);
+    font-family: 'Lato', sans-serif;
+}
+
+.layout{
+    width: 900px;
+    height: 104vh;
+    background-color: white;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.layout .header{
+    height: 70px;
+    border-bottom: 1px solid rgb(245, 123, 185);
+    background-color: rgb(202, 6, 147);
+    box-sizing: border-box;
+}
+
+.layout .header .nomeApp{
+    width: 240px;
+    height: 100%;
+    color: white;
+    float: left;
+    text-align: center;
+    border-right: 1px solid rgb(245, 123, 185);
+    font-size: 24px;
+    line-height: 70px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.layout > .header > .button-login, .button-logout{
+    float: right;
+    width: 110px;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.layout .header .button-logout{
+    display: none;
+}
+
+.button{
+    width: 65px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgb(245, 123, 185);
+    color: #3C3C3C;
+    border-radius: 14px;
+    outline: none;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.button:hover{
+    background-color: rgb(245, 123, 185);
+    color: white;
+}
+
+.layout .header .nomeGrupo{
+    float: left;
+    width: 548px;
+    height: 100%;
+    color: white;
+    text-align: center;
+    line-height: 65px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 900px;
+    margin: auto;
+    height: 100vh;
+    z-index: 20;
+    color: white;
+}
+
+.modal > .login{
+    position: relative;
+    background-color: rgb(192, 23, 159);
+    width: 400px;
+    height: 30vh;
+    top: 50%;
+    left: 50%;
+    border-radius: 16px;
+    z-index: 20;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.modal .login p{
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.modal .login #id{
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 6px;
+    border: 1px solid rgb(226, 97, 163);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.modal .login #form-login{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.modal .login .button-login{
+    float: right;
+    height: 100%;
+    box-sizing: border-box;
+    margin-top: 1px;
+    border-radius: 15px;
+}
+
+.modal .modal-overlay{
+    width: 900px;
+    height: 100%;
+    background-color:rgb(231, 167, 200);
+    position: absolute;
+    top: 0;
+    opacity: 0.7;
+}
+
+.modal .login .close{
+    float: right;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    background-color:rgb(245, 123, 185);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.grupos{
+    float: left;
+    width: 240px;
+    height: calc(100vh - 50px);
+    z-index: 1;
+    box-sizing: border-box;
+    border-right: 1px solid rgb(205, 45, 127);
+}
+
+.groups-list{
+    overflow: auto;
+    height: calc(100vh - 270px);
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.groups-list::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+.groups-list::-webkit-scrollbar-track {
+    background-color: rgb(205, 45, 127);
+    z-index: 1;
+    border-radius: 50px;
+}
+ 
+.groups-list::-webkit-scrollbar-track {
+    background-color: rgb(205, 45, 127);
+    z-index: 1;
+    border-radius: 50px;
+}
+
+.groups-list .group{
+    width: 100%;
+    height: 70px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.groups-list .group.active{
+    background-color: rgb(236, 103, 171);
+}
+
+.groups-list .group:hover{
+    background-color: rgb(243, 150, 197);
+}
+
+.groups-list .group .icon{
+    float: left;
+    width: 50px;
+    margin-right: 9px;
+    padding-left: 10px; 
+}
+
+.groups-list .group .icon img{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(226, 97, 163);
+    border-radius: 50%;
+    border: 2px solid white;
+    
+}
+
+.groups-list .group .name{
+    line-height: 60px;
+    padding-left: 10px;
+    color: #3C3C3C;
+}
+
+.add-group{
+    height: 220px;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 20px 15px 10px 10px;
+    font-size: 14px;
+    color: #C11891;
+    font-weight: bold;
+}
+
+.add-group #group-name, #group-id{
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    padding: 8px;
+    border: 2px solid #C11891;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+.add-group .button-add{
+    float: right;
+    height: 100%;
+    line-height: 20px;
+    box-sizing: border-box;
+    margin-top: 2px;
+}
+
+.button{
+    width: 80px;
+}
+
+.messages-content{
+    width: 658px;
+    box-sizing: border-box;
+    float: left;
+    height: calc(100vh - 50px);
+    position: relative;
+    z-index: 1;
+}
+
+
+.loading{
+    display: none;
+    position: absolute;
+    top: calc(50% - 60px);
+    left: calc(50% - 20px);
+    width: 50px;
+    height: 50px;
+    border: 9px solid rgb(205, 45, 127);
+    border-bottom: 5px solid transparent;
+    border-radius: 50%;
+    animation-name: rotate-scale;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate-scale {
+    0%{
+        transform: scale(1) rotate(0deg);
+    }50%{
+        transform: scale(0.6) rotate(180deg);
+    }100%{
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+.messages{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: auto;
+    height: 90%;
+}
+
+.send-message{
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-top: 1px solid rgb(186, 58, 124);
+    height: calc(10% - 1px);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.send-message form{
+    height: 100%;
+}
+
+.send-message #message {
+    border: none;
+    width: 85%;
+    height: 100%;
+    outline: none;
+    font-size: 17px;
+    resize: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.send-message .button-send{
+    float: right;
+    width: 15%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.messages::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+.messages::-webkit-scrollbar-track {
+    background-color: rgb(226, 95, 162);
+    z-index: 1;
+    border-radius: 50px;
+}
+ 
+.messages::-webkit-scrollbar-thumb {
+    background-color: rgb(205, 45, 127);
+    border-radius: 50px;
+}
+
+.messages .message{
+    display: block;
+    margin-right: 70px;
+}
+
+.message.active{
+    display: block;
+    text-align: right;
+    margin-left: 70px;
+    margin-right: 0;
+}
+
+.messages .message.active > .message-container{
+    background-color: rgb(255, 236, 246);
+}
+
+.messages .message > .message-container{
+    margin-bottom: 3px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    height: auto;
+    font-size: 18px;
+    display: inline-block;
+    background-color: rgb(239, 134, 188);
+}
+
+.messages{
+    background-image: url(parede.jpg);
+}
+
+.messages .message .name-contact{
+    padding: 4px 15px 4px 12px;
+    color: white;
+}
+
+.messages .message .message-contact{
+    padding: 0px 15px 4px 12px;
+    color:  #3C3C3C;
+}
+
+.messages .message.active .name-contact{
+    padding: 4px 12px 4px 15px;
+    color: rgb(199, 19, 111);
+}
+
+.messages .message.active .message-contact{
+    padding: 0px 12px 4px 15px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mais vendidos | Mary Store</title>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="galeriadeprodutos.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="galeriadeprodutos.html">Mary Store</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Mais vendidos <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Tutoriais</a></li>
+                    <li><a href="#">Presentes</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Buscar">
+                    </div>
+                </form>
+
+                <ul class="nav navbar-nav navbar-right ">
+
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle btn-carrinho" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="glyphicon glyphicon-shopping-cart "></span> Meu carrinho <span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-cart" role="menu" id="itens-carrinho">
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle bt-entrar" data-toggle="dropdown">Entrar <b class="caret"></b></a>
+                        <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form class="form" role="form" id="login" novalidate>
+                                            <div class="form-group" id="grupo1">
+                                                <label for="email" id="label1">Email:</label>
+                                                <input name="email" ng-model="email" type="email" class="form-control" id="email" placeholder="email">
+                                            </div>
+                                            <div class="form-group " id="grupo2">
+                                                <label for="senha" id="lebal2">Senha:</label>
+                                                <input name="senha" ng-model="senha" type="password" class="form-control" id="senha" placeholder="senha">
+                                            </div>
+                                            <div id="falhaNoLogin" class="hide">
+                                                <p class="text-danger">Login ou senha inválidos</p>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn entrar btn-block">Entrar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="divider"></li>
+                            <a href="" id="esqueceuASenha">Esqueci minha senha</a>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle bt-cadastrar" data-toggle="dropdown">Cadastre-se <b class="caret"></b></a>
+                        <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form class="form" role="form" id="cadastro" novalidate>
+                                            <div class="form-group" id="grupo3">
+                                                <label for="email" id="label3">Email:</label>
+                                                <input name="email" ng-model="email" type="email" class="form-control" id="email" placeholder="email">
+                                            </div>
+                                            <div class="form-group" id="grupo4">
+                                                <label for="senha" id="label4">Senha:</label>
+                                                <input name="senha" ng-model="senha" type="password" class="form-control" id="senha" placeholder="senha">
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn cadastrar  btn-block">Cadastrar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <button type="submit" class="btn sair">Sair</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="cards-produtos">
+
+
+    </div>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+    <script src="cadastro.js"></script>
+    <script src="itensCarrinho.js"></script>
+    <script src="adicionarProdutos.js"></script>
+    <script src="validarDadosLogin.js"></script>
+    <script src="validarDadosCadastro.js"></script>
+
+</body>
+
+</html>
